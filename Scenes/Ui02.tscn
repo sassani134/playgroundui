@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv1iptsnu68vp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f2hvw"]
+bg_color = Color(0, 0.784314, 0, 1)
+border_width_bottom = 5
+border_color = Color(0, 0.392157, 0, 1)
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_size = 5
+shadow_offset = Vector2(4, 3)
+
+[sub_resource type="Theme" id="Theme_f2hvw"]
+Button/styles/normal = SubResource("StyleBoxFlat_f2hvw")
+
+[node name="Ui02" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_f2hvw")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -15.5
+offset_right = 31.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Button
+"
